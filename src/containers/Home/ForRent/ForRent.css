@@ -1,0 +1,102 @@
+.app__home-forRent {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 11%;
+}
+
+.app__home-forRent_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.app__home-forRent_heading h2 {
+    font-size: 3rem;
+    margin: 0.7rem 0;
+}
+
+.app__home-forRent_heading h4 {
+    font-weight: 500;
+    margin: 0.7rem 0 1.5rem 0;
+    font-size: 1.3rem;
+}
+
+.app__home-forRent_heading h4 span {
+    font-weight: bold;
+    color: #7269ec;
+}
+
+.app__home-forRent_boxcard {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.app__home-forRent_boxcard-card {
+    min-width: 290px;
+    max-width: 320px;
+    min-height: 260px;
+    padding: 10px;
+    border-radius: 20px;
+    flex: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    background-size: cover;
+    background-position: 50% 50%;
+    transition-delay: 0.5s;
+    cursor: pointer;
+}
+
+.app__home-forRent_boxcard-card:hover {
+    background-size: 150%;
+}
+
+.app__home-forRent_boxcard-card div {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__home-forRent_boxcard-card div h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.app__home-forRent_boxcard-card div p {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+@media (min-width: 2000px) {
+    .app__home-forRent_boxcard {
+        gap: 4rem;
+    }
+
+    .app__home-forRent_boxcard-card {
+        min-width: 350px;
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 450px) {
+    .app__home-forRent {
+        padding: 0 3%;
+    }
+
+    .app__home-forRent_boxcard-card {
+        min-width: 260px;
+    }
+}

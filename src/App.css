@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html {
+    font-family: open sans;
+}
+
+.blackButton {
+  background: black;
+  color: white;
+  padding: 13px 30px 14px;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.blackButton:hover {
+  color: rgb(189, 189, 189);
+}
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.7s cubic-bezier(0.66 ,0.77, 0.85, 1) both;
+	        animation: scale-in-center 0.7s cubic-bezier(0.66, 0.77, 0.85, 1) both;
+}
+
+ @-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0.3);
+              transform: scale(0.3);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0.3);
+              transform: scale(0.3);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
