@@ -15,7 +15,7 @@ const ForRent = () => {
       useEffect(() => {
         const observerOptions = {
           root: null,
-          rootMargin: '50px',
+          rootMargin: '200px',
           threshold: 0.5,
         };
     
@@ -42,7 +42,7 @@ const ForRent = () => {
         <div className="app__home-forRent_boxcard" ref={elementRef}>
             {forRent.map((item, index) => (
                 <div className={`app__home-forRent_boxcard-card ${isVisible ? 'scale-in-center' : ''}`}
-                key={"forRent-" + index} style={{backgroundImage: `url(${item.imgUrl})`, opacity: `${isVisible ? 1 : 0}`}}>
+                key={"forRent-" + index} style={{backgroundImage: `url(${item.imgUrl})`}}>
                     <div>
                         <h5>$ {item.price}</h5>
                         <p>{item.desc}</p>

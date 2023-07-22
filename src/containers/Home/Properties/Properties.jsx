@@ -7,10 +7,11 @@ const Properties = () => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
   const [ arrow, setArrow ] = useState('left')
+  const [started, setStarted] = useState(false);
 
   const handleVisibilityChange = (entries) => {
     const entry = entries[0];
-    setIsVisible(entry.isIntersecting);
+    setIsVisible(entry.isIntersecting)
   };
 
   useEffect(() => {
@@ -32,6 +33,12 @@ const Properties = () => {
       }
     };
   }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      setStarted(true)
+    }
+  }, [isVisible])
 
   const scroll = (direction) => {
     const { current } = elementRef;
@@ -73,7 +80,7 @@ const Properties = () => {
     <div className='app__home-properties' >
         <div className='app__home-properties_boxcard' ref={elementRef}>
         {properties.map((property, index) => (
-            <div className={`app__home-properties_boxcard-card ${isVisible ? 'scale-in-center' : ''}`} style={isVisible ? {opacity: 1} : {opacity: 0}} key={property.city + index}>
+            <div className={`app__home-properties_boxcard-card ${started ? 'scale-in-center' : ''}`} key={property.city + index}>
             <img src={property.imgUrl} alt="" />
             <h3>{property.city}</h3>
             <h4>{property.Number} properties</h4>

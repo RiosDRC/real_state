@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css"
-import { ForRent, Introduction, Properties } from '../../containers/Home'
+import { Achievements, ApartmentTypes, ForRent, Info, Introduction, Properties } from '../../containers/Home'
 
 const Home = () => {
   return (
@@ -8,6 +8,9 @@ const Home = () => {
       <Introduction />
       <Properties />
       <ForRent />
+      <Info />
+      <Achievements />
+      <ApartmentTypes />
     </div>
   )
 }

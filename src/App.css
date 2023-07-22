@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
     font-family: open sans;
@@ -8,9 +9,9 @@ html {
 .blackButton {
   background: black;
   color: white;
-  padding: 13px 30px 14px;
+  padding: 18px 25px;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -19,9 +20,10 @@ html {
   color: rgb(189, 189, 189);
 }
 
+
 .scale-in-center {
-	-webkit-animation: scale-in-center 0.7s cubic-bezier(0.66 ,0.77, 0.85, 1) both;
-	        animation: scale-in-center 0.7s cubic-bezier(0.66, 0.77, 0.85, 1) both;
+	-webkit-animation: scale-in-center 1s cubic-bezier(0.33 ,0.55, 0.75, 1) both;
+	        animation: scale-in-center 1s cubic-bezier(0.33, 0.55, 0.75, 1) both;
 }
 
  @-webkit-keyframes scale-in-center {

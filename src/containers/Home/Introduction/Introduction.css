@@ -90,7 +90,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: unset;
         height: 6rem;
     }
     .app__home-intro_main input {
