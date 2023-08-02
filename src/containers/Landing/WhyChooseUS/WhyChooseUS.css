@@ -1,0 +1,73 @@
+.app__landing-wcu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.app__landing-wcu_right, .app__landing-wcu_left {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-inline: 2px;
+    background: #dddddd;
+    border-radius: 20px;
+    max-width: 450px;
+}
+
+.app__landing-wcu_left {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/010/895/768/non_2x/home-icon-sign-symbol-design-free-png.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.app__landing-wcu_right {
+    height: 500px;
+}
+
+.app__landing-wcu_right h2 {
+    word-wrap: break-word;
+    font-size: 3rem;
+    font-weight: 700px;
+    margin-bottom: 5px;
+}
+
+.app__landing-wcu_right h5 {
+    word-wrap: break-word;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.app__landing-wcu_right ul {
+    margin-top: 0;
+    padding: 16px;
+}
+
+.app__landing-wcu_right li {
+    font-size: 1.2rem;
+    font-family: Ubuntu;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 450px) {
+    .app__landing-wcu_left {
+        height: 250px;
+        width: 250px;
+    }
+
+    .app__landing-wcu_right {
+        height: max-content;
+    }
+
+    .app__landing-wcu_right h2 {
+        font-size: 1.8rem;
+    }
+}

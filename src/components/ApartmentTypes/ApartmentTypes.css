@@ -1,19 +1,20 @@
-.app__home-apartmentTypes {
+.app__apartmentTypes {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     padding: 4rem 10%;
     font-family: Ubuntu;
+    margin-top: 1rem;
 }
 
-.app__home-apartmentTypes h2 {
+.app__apartmentTypes h2 {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
 }
 
-.app__home-apartmentTypes_box {
+.app__apartmentTypes_box {
     margin-top: 2rem;
     width: 100%;
     display: flex;
@@ -52,14 +53,14 @@
 
 
 @media (max-width: 1400px) {
-    .app__home-apartmentTypes {
+    .app__apartmentTypes {
         padding: 3rem 2%;
     }
 }
 
 
 @media (max-width: 850px) {
-    .app__home-apartmentTypes {
+    .app__apartmentTypes {
         align-items: center;
     }
 

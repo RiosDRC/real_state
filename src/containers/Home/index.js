@@ -3,7 +3,10 @@ import Properties from "./Properties/Properties"
 import ForRent from "./ForRent/ForRent"
 import Info from "./Info/Info"
 import Achievements from "./Achievements/Achievements"
-import ApartmentTypes from "./ApartmentTypes/ApartmentTypes"
+import WhyChooseUS from "./WhyChooseUS/WhyChooseUS"
+import Sponsored from "../../components/Sponsored/Sponsored"
+import Testimonial from "./Testimonial/Testimonial"
+import Register from "../../components/Register/Register"
 
 export {
     Introduction,
@@ -11,5 +14,8 @@ export {
     ForRent,
     Info,
     Achievements,
-    ApartmentTypes,
+    WhyChooseUS,
+    Sponsored,
+    Testimonial,
+    Register,
 }

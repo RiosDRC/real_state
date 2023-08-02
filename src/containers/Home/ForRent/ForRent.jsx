@@ -5,7 +5,7 @@ import { forRent } from '../../../constants/constants'
 const ForRent = () => {
     const [ isVisible, setIsVisible ] = useState(false);
     const elementRef = useRef(null);
-
+    const scrollDirectionRef = useRef(0);
 
     const handleVisibilityChange = (entries) => {
         const entry = entries[0];
@@ -15,8 +15,8 @@ const ForRent = () => {
       useEffect(() => {
         const observerOptions = {
           root: null,
-          rootMargin: '200px',
-          threshold: 0.5,
+          rootMargin: '100px',
+          threshold: 0.2,
         };
     
         const observer = new IntersectionObserver(handleVisibilityChange, observerOptions);
@@ -25,10 +25,22 @@ const ForRent = () => {
           observer.observe(elementRef.current);
         }
     
-        return () => {
-          if (elementRef.current) {
+        const handleScroll = () => {
+          const currentScrollPos = window.pageYOffset;
+          if (currentScrollPos > scrollDirectionRef.current) {
+            scrollDirectionRef.current = currentScrollPos;
+            observer.observe(elementRef.current);
+          } else if (currentScrollPos < scrollDirectionRef.current) {
+            scrollDirectionRef.current = currentScrollPos;
             observer.unobserve(elementRef.current);
           }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          observer.disconnect();
+          window.removeEventListener('scroll', handleScroll);
         };
       }, []);
 

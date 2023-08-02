@@ -1,0 +1,83 @@
+.app__landing-findHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__landing-findHome_left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__landing-findHome_left-img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/010/895/768/non_2x/home-icon-sign-symbol-design-free-png.png');
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.app__landing-findHome_right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background: #f2f2f2;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.app__landing-findHome_right h2 {
+    text-align: center;
+    flex: 100%;
+}
+
+.app__landing-findHome_right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 50%;
+    max-width: 50%;
+    min-width: 250px;
+}
+
+.app__landing-findHome_right-content h4 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    max-width: 300px;
+    text-align: center;
+}
+
+.app__landing-findHome_right-content h4 span {
+    font-weight: 400;
+}
+
+.app__landing-findHome_right-content svg {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    color: white;
+    background: #fd6703;
+    border-radius: 50%;
+}
+
+@media (max-width: 950px) {
+    .app__landing-findHome {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    .app__landing-findHome_left-img {
+        width: 300px;
+        height: 300px;
+    }
+}

@@ -79,10 +79,11 @@
 }
 
 @media (max-width: 750px) {
+
     .app__home-info_left, .app__home-info_right {
         margin-top: 2rem;
         min-width: 300px;
-        padding: auto;
+        padding: 5px;
         text-align: center;
         gap: 1rem;
     }

@@ -1,3 +1,12 @@
+import company1 from '../assets/black-logo-1.png'
+import company2 from '../assets/black-logo-2.png'
+import company3 from '../assets/black-logo-3.png'
+import company4 from '../assets/black-logo-4.png'
+import company5 from '../assets/black-logo-5.png'
+import company6 from '../assets/black-logo-6.png'
+import company7 from '../assets/black-logo-7.png'
+
+
 const properties = [
     {
         city: 'Paris',
@@ -69,4 +78,14 @@ const forRent = [
     },
 ]
 
-export { properties, forRent }
+const companies = [
+    company1,
+    company2,
+    company3,
+    company4,
+    company5,
+    company6,
+    company7
+]
+
+export { properties, forRent, companies }

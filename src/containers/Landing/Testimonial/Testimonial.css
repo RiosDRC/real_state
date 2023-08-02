@@ -1,0 +1,57 @@
+.app__landing-testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem 0;
+}
+
+.app__landing-testimonial_left, .app__landing-testimonial_right {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 30px;
+    margin-inline: 2px;
+    border-radius: 20px;
+}
+
+.app__landing-testimonial_right {
+    background: #dddddd;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/010/895/768/non_2x/home-icon-sign-symbol-design-free-png.png');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.app__landing-testimonial_left {
+    background: #fbeced;
+    height: 530px;
+    width: 500px;
+}
+
+.app__landing-testimonial_left svg {
+    font-size: 2.5rem;
+}
+
+.app__landing-testimonial_left h5 {
+    word-wrap: break-word;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.app__landing-testimonial_left p {
+    font-size: 1rem;
+    max-width: 300px;
+}
+
+
+
+@media (max-width: 450px) {
+    .app__landing-testimonial_right, .app__landing-testimonial_left {
+        height: 550px;
+    }
+}

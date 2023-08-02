@@ -1,0 +1,19 @@
+.app__footer {
+    background: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 4rem 5px 2rem 5px;
+    gap: 4rem;
+}
+
+.app__footer h4 {
+    text-align: center;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.app__footer h5 {
+    margin: 0;
+}

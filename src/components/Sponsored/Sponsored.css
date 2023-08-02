@@ -1,0 +1,96 @@
+.app__sponsored {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4rem 0;
+}
+
+.app__sponsored-boxcard {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 12rem;
+}
+
+.app__sponsored-boxcard::-webkit-scrollbar {
+    display: none;
+}
+
+.app__sponsored-boxcard_card {
+    scroll-snap-align: start;
+    padding-inline: 2rem;
+}
+
+.app__sponsored-boxcard_card img {
+    width: 80px;
+}
+
+.app__sponsored_arrows {
+    width: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app__sponsored_arrows svg {
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.684);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width:2000px) {
+    .app__sponsored_arrows {
+        display: none;
+    }
+}
+
+@media (max-width:1100px) {
+    .app__sponsored-boxcard {
+        gap: 4rem;
+    }
+}
+
+@media (max-width:950px) {
+    .app__sponsored-boxcard {
+        gap: 5rem;
+    }
+
+    .app__sponsored-boxcard_card {
+        padding-inline: 4rem;
+    }
+}
+
+@media (max-width:800px) {
+    .app__sponsored-boxcard {
+        gap: 1rem;
+    }
+    
+}
+
+@media (max-width:700px) {
+    .app__sponsored-boxcard {
+        gap: 10rem;
+    }
+
+    .app__sponsored-boxcard_card {
+        padding-inline: 12rem;
+        scroll-snap-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    .app__sponsored-boxcard {
+        gap: 1rem;
+    }
+    .app__sponsored-boxcard_card {
+        padding-inline: 8rem;
+    }
+}
