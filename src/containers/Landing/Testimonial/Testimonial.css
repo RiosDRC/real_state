@@ -48,10 +48,12 @@
     max-width: 300px;
 }
 
-
-
 @media (max-width: 450px) {
-    .app__landing-testimonial_right, .app__landing-testimonial_left {
+    .app__landing-testimonial_left {
         height: 550px;
+    }
+    .app__landing-testimonial_right {
+        height: 250px;
+        width: 250px;
     }
 }

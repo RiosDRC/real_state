@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800,700,600,500,400,300');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -22,8 +22,8 @@ html {
 
 
 .scale-in-center {
-	-webkit-animation: scale-in-center 1s cubic-bezier(0.33 ,0.55, 0.75, 1) both;
-	        animation: scale-in-center 1s cubic-bezier(0.33, 0.55, 0.75, 1) both;
+	-webkit-animation: scale-in-center 1.3s cubic-bezier(0.33 ,0.55, 0.75, 1) both;
+	        animation: scale-in-center 1.3s cubic-bezier(0.33, 0.55, 0.75, 1) both;
 }
 
  @-webkit-keyframes scale-in-center {

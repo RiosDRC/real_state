@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Introduction.css"
 
-const Introduction = () => {
+const Introduction = ({bgImage}) => {
   const handleSubmit = e => {
     e.preventDefault()
     
@@ -10,8 +10,8 @@ const Introduction = () => {
   }
 
   return (
-    <div className='app__home-intro scale-in-center'>
-      <div className="app__home-intro_main">
+    <div className='app__intro scale-in-center'>
+      <div className="app__intro_main" style={bgImage?{backgroundImage: `url(${bgImage})`}:null}>
         <h1>Easy Way to Find a Perfect Property</h1>
         <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing</h4>
         <h4>Lorem ipsum <span>dolor</span></h4>

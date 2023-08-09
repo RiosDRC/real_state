@@ -50,6 +50,7 @@
 .app__home-register form button {
     flex: 1;
     max-width: 150px;
+    border: none;
 }
 
 

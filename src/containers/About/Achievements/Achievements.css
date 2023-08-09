@@ -1,0 +1,11 @@
+.app__about-achievements {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding: 4.5rem 0;
+    background: #fbeced;
+    color: black;
+}

@@ -1,0 +1,42 @@
+.app__about-ourAgents {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 15%;
+}
+
+.app__about-ourAgents h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.app__about-ourAgents button {
+    max-width: max-content;
+}
+
+.app__about-ourAgents_box {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.app__about-ourAgents_box-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 300px;
+    background: #f0effd;
+    border-radius: 20px;
+}
+
+.app__about-ourAgents_box-card img {
+    width: 270px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}

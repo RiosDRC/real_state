@@ -1,0 +1,74 @@
+.app__contactUs {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 10%;
+}
+
+.app__contactUs-left, .app__contactUs-right {
+    flex: 40%;
+    display: flex;
+    padding: 2rem;
+    background: #fbeced;
+    border-radius: 50px;
+    min-height: 180px;
+}
+
+.app__contactUs-left {
+    flex-direction: column;
+    font-size: 2.5rem;
+    justify-content: center;
+}
+
+.app__contactUs-left h3 {
+    margin: 0;
+}
+
+.app__contactUs-right {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.app__contactUs-right button{
+    max-width: max-content;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.app__contactUs-right button:first-child {
+    border: 1px solid black;
+    background: transparent;
+}
+
+.app__contactUs-right button:first-child:hover {
+    border: 1px solid transparent;
+}
+
+.app__contactUs-right button:last-child {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    word-wrap: break-word;
+}
+
+.app__contactUs-right button svg {
+    font-size: 1.2rem;
+    color: rgb(197, 197, 197);
+}
+
+@media (max-width: 650px) {
+    .app__contactUs-left h3 {
+        font-size: 2rem;
+    }
+    .app__contactUs-right {
+        flex-direction: column;
+    }
+}

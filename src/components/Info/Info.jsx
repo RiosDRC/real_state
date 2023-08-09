@@ -3,7 +3,7 @@ import './Info.css';
 import { TbBulb, TbUsers } from 'react-icons/tb';
 import { FiSettings } from 'react-icons/fi';
 
-const Info = () => {
+const Info = ({bgUrl}) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
   const scrollDirectionRef = useRef(0);
@@ -74,7 +74,7 @@ const Info = () => {
           </h4>
         </div>
       </div>
-      <div className={`app__home-info_right ${isVisible ? 'scale-in-center' : ''}`}/>
+      <div className={`app__home-info_right ${isVisible ? 'scale-in-center' : ''}`} style={bgUrl ? {backgroundImage: `url('${bgUrl}')`} : null }/>
     </div>
   )
 }
