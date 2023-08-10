@@ -5,6 +5,15 @@ import company4 from '../assets/black-logo-4.png'
 import company5 from '../assets/black-logo-5.png'
 import company6 from '../assets/black-logo-6.png'
 import company7 from '../assets/black-logo-7.png'
+import agent1 from '../assets/agent_1.jpg'
+import agent2 from '../assets/agent_2.jpg'
+import agent3 from '../assets/agent_3.jpg'
+import agent4 from '../assets/agent_4.jpg'
+import agent5 from '../assets/agent_5.jpg'
+import agent6 from '../assets/agent_6.jpg'
+import agent7 from '../assets/agent_7.jpg'
+import agent8 from '../assets/agent_8.jpg'
+import agent9 from '../assets/agent_9.jpeg'
 
 
 const properties = [
@@ -16,7 +25,7 @@ const properties = [
     {
         city: 'New York',
         Number: 40,
-        imgUrl: 'https://www.ny1.com/content/dam/News/2020/01/09/viewfromthegroundof111west57.jpg/jcr:content/renditions/cq5dam.thumbnail.767.431.margin.png'
+        imgUrl: 'https://images.pexels.com/photos/2190283/pexels-photo-2190283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     },
     {
         city: 'Los Angeles',
@@ -88,4 +97,43 @@ const companies = [
     company7
 ]
 
-export { properties, forRent, companies }
+const agents = [
+    {
+        imgUrl: agent1,
+        name: 'Nick Larson'
+    },
+    {
+        imgUrl: agent2,
+        name: 'Stella Hudson'
+    },
+    {
+        imgUrl: agent3,
+        name: 'Nina Perry'
+    },
+    {
+        imgUrl: agent4,
+        name: 'Ralf Johnson'
+    },
+    {
+        imgUrl: agent5,
+        name: 'Inga Howard'
+    },
+    {
+        imgUrl: agent6,
+        name: 'Albert Florence'
+    },
+    {
+        imgUrl: agent7,
+        name: 'Lada Silva'
+    },
+    {
+        imgUrl: agent8,
+        name: 'Pitter Scavo'
+    },
+    {
+        imgUrl: agent9,
+        name: 'Tina Ramos'
+    }
+]
+
+export { properties, forRent, companies, agents }

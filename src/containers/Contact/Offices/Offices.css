@@ -1,0 +1,61 @@
+.app__contact-offices {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 13%;
+    background: #f0effd;
+    font-family: Ubuntu;
+}
+
+.app__contact-offices h2 {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+}
+
+.app__contact-offices h3 {
+    font-weight: normal;
+}
+
+.app__contact-offices_box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.app__contact-offices_box-card {
+    background: white;
+    flex: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 50px;
+    max-width: 290px;
+    min-width: 250px;
+}
+
+.app__contact-offices_box-card img {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background: #c3bff8;
+}
+
+.app__contact-offices_box-card h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.app__contact-offices_box-card p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+@media (max-width: 450px) {
+    .app__contact-offices {
+        padding: 2rem 2%;
+    }
+}

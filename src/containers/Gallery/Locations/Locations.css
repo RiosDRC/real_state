@@ -1,0 +1,34 @@
+.app__gallery-locations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 13%;
+    background: #fbeced;
+}
+
+.app__gallery-locations_boxCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 270px;
+}
+
+.app__gallery-locations_boxCard img {
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+
+.app__gallery-locations_boxCard h4 {
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+@media (max-width: 700px) {
+    .app__gallery-locations {
+        justify-content: center;
+    }
+}

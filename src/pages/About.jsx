@@ -14,7 +14,7 @@ import {
 const About = () => {
   return (
     <Layout>
-        <Introduction bgImage={introImg}/>
+        <Introduction bgImage={introImg} title='About'/>
         <OurMission />
         <ImageSection />
         <Achievements bg='#fbeced' />

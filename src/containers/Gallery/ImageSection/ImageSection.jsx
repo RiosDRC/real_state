@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import './OurAgents.css'
-import { agents } from '../../../constants/constants'
+import './ImageSection.css'
+import { properties } from '../../../constants/constants'
 
-const OurAgents = () => {
+const ImageSection = ({title, imgUrl}) => {
     const [isVisible, setIsVisible] = useState(false);
     const elementRef = useRef(null);
     const scrollDirectionRef = useRef(0);
@@ -17,7 +17,7 @@ const OurAgents = () => {
       const observerOptions = {
         root: null,
         rootMargin: '50px',
-        threshold: 0.3,
+        threshold: 0.5,
       };
   
       const observer = new IntersectionObserver(handleVisibilityChange, observerOptions);
@@ -46,20 +46,12 @@ const OurAgents = () => {
     }, []);
 
   return (
-    <div className='app__about-ourAgents'>
-        <h2>Our Exclusive Agents</h2>
-        <button className='blackButton'>View More</button>
-
-        <div className="app__about-ourAgents_box" ref={elementRef}>
-            {agents.slice(0, 3).map((agent, index) => (
-                <div className={`app__about-ourAgents_box-card ${isVisible ? 'scale-in-center' : ''}`} key={agent.name + '-' + index}>
-                    <img src={agent.imgUrl} alt={agent.name}/>
-                    <h3>{agent.name}</h3>
-                </div>
-            ))}
-        </div>
+    <div className='app__gallery-imageSection'>
+        <h2>{title || properties[1].city}</h2>
+        <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h5>
+        <img src={imgUrl || properties[1].imgUrl} alt={'ImgSec-' + properties[1].city} ref={elementRef} className={`${isVisible ? 'scale-in-center' : ''}`}/>
     </div>
   )
 }
 
-export default OurAgents
+export default ImageSection

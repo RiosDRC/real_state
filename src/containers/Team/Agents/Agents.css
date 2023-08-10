@@ -1,0 +1,43 @@
+.app__team-agents {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 13%;
+}
+
+.app__team-agents h2 {
+    text-align: left;
+    font-size: 3rem;
+}
+
+.app__team-agents_box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.app__team-agents_box-card {
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fbeced;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.app__team-agents_box-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 550px) {
+    .app__team-agents {
+        padding: 2rem 1%;
+    }
+}

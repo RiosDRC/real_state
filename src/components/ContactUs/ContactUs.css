@@ -16,6 +16,7 @@
     background: #fbeced;
     border-radius: 50px;
     min-height: 180px;
+    max-width: 500px;
 }
 
 .app__contactUs-left {
@@ -26,6 +27,7 @@
 
 .app__contactUs-left h3 {
     margin: 0;
+    text-align: center;
 }
 
 .app__contactUs-right {
@@ -65,6 +67,11 @@
 }
 
 @media (max-width: 650px) {
+    .app__contactUs {
+        margin-top: 2rem;
+        padding: 1rem 1%;
+    }
+
     .app__contactUs-left h3 {
         font-size: 2rem;
     }
